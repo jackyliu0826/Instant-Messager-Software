@@ -1,0 +1,228 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN                ICON    DISCARDABLE     "main.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CUR1                CURSOR  DISCARDABLE     "arrow.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "文件"
+    BEGIN
+        MENUITEM "退出",                        IDM_EXIT
+    END
+    POPUP "好友"
+    BEGIN
+        MENUITEM "添加好友",                    IDM_ADDFRIEND
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "关于",                        IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  22, 17, 230, 75
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "System"
+BEGIN
+    ICON            IDI_MAIN,IDC_MYICON,14,9,20,20
+    LTEXT           "winapi_hello Version 1.0",IDC_STATIC,49,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2012",IDC_STATIC,49,20,119,8
+    DEFPUSHBUTTON   "OK",IDOK,195,6,30,11,WS_GROUP
+END
+
+IDD_LOGIN DIALOG DISCARDABLE  0, 0, 202, 104
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户登录"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,25,83,50,14
+    PUSHBUTTON      "取消",IDCANCEL,103,83,50,14
+    LTEXT           "用户ID:",IDC_STATIC,20,20,51,12
+    LTEXT           "密码:",IDC_STATIC,21,45,57,15
+    EDITTEXT        IDC_EDIT1,84,19,69,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,84,42,69,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "注册",IDC_BUTTON1,163,20,27,11
+    PUSHBUTTON      "忘记密码",IDC_BUTTON2,160,43,35,11
+END
+
+IDD_REGISTER DIALOGEX 0, 0, 216, 155
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "注册",IDOK,25,132,50,14
+    PUSHBUTTON      "取消",IDCANCEL,131,132,50,14
+    EDITTEXT        IDC_EDIT1,53,8,105,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,53,75,105,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,53,100,106,15,ES_AUTOHSCROLL
+    LTEXT           "邮箱：",IDC_STATIC,18,10,34,15
+    LTEXT           "昵称：",IDC_STATIC,18,78,26,13
+    LTEXT           "验证码：",IDC_STATIC,18,101,32,14
+    PUSHBUTTON      "发送验证码",IDC_BUTTON1,167,8,43,12,0,WS_EX_TRANSPARENT
+    LTEXT           "密码：",IDC_STATIC,18,32,34,15
+    EDITTEXT        IDC_EDIT4,53,30,105,15,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,53,52,105,15,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "确认密码：",IDC_STATIC,18,52,34,15
+END
+
+IDD_ADDFRIEND DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加好友"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,22,73,50,14
+    PUSHBUTTON      "取消",IDCANCEL,117,73,50,14
+    CTEXT           "用户ID:",IDC_STATIC,22,25,44,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT1,85,25,79,16,ES_AUTOHSCROLL
+END
+
+IDD_CONADD DIALOG DISCARDABLE  0, 0, 169, 74
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "确认好友申请"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,20,53,50,14
+    PUSHBUTTON      "取消",IDCANCEL,100,53,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 97
+    END
+
+    IDD_REGISTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 210
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_ADDFRIEND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CONADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 162
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "myicq"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
